@@ -1,0 +1,6 @@
+If Not CreateObject("Scripting.FileSystemObject").FolderExists("C:\KALAY") Then
+	CreateObject("Scripting.FileSystemObject").CreateFolder("C:\KALAY")	
+End If
+If Not CreateObject("Scripting.FileSystemObject").FolderExists("C:\KALAY\"& Year(Date())& "_" & Month(Date()) & "_"& Day(Date())) Then
+	CreateObject("Scripting.FileSystemObject").CreateFolder("C:\KALAY\"& Year(Date())& "_" & Month(Date()) & "_"& Day(Date()))	
+End If
